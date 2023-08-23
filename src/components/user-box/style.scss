@@ -1,0 +1,26 @@
+.user-box{
+
+}
+
+
+@media only screen and (max-width : 1400px){}
+@media only screen and (max-width : 1200px){
+    .user-box{
+        flex-direction: column;
+    }   
+}
+@media only screen and (max-width : 992px){
+    .user-box{
+        flex-direction: column;
+    }  
+}
+@media only screen and (max-width : 768px){
+    .user-box{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width : 567px){
+    .user-box{
+        flex-direction: column;
+    }
+}

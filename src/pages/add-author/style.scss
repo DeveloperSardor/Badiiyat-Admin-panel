@@ -1,0 +1,214 @@
+.author-page {
+    display: flex;
+    // flex-direction: row !important;
+    .left {
+      width: 50%;
+      .custom-upload{
+          .file-name{
+              display: block;
+              border: 1px solid;
+              width: 315px;
+              border-radius: 17px;
+              gap: 10px;
+              height: 428px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 161px, 73px, 161px, 73px;
+             .book_img{
+              width: 100%;
+              height: 100%;
+             }
+          }
+      }
+    }
+    .right {
+      width: 50%;
+      .lds-dual-ring {
+          display: inline-block;
+          width: 35px !important;
+          height: 30px !important;
+          margin-top: -.6.5em;
+        }
+        .lds-dual-ring:after {
+          content: " ";
+          display: block;
+          width: 45px;
+          height: 45px;
+          margin: 8px;
+          margin-top: -4px;
+          border-radius: 50%;
+          border: 6px solid #fff;
+          border-color: #fff transparent #fff transparent;
+          animation: lds-dual-ring 1.2s linear infinite;
+        }
+        @keyframes lds-dual-ring {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+  }
+      .heading{
+          font-family: 'Poppins';
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 48px;
+      }
+      .inputs{
+          input{
+              background: #FFFFFF;
+              border: 1px solid #B4B4BB;
+              width: 70%;
+              height: 46px;
+              border-radius: 4px;
+              padding: 0 20px;
+              line-height: 21px;
+              font-family: 'Poppins';
+              font-weight: 400;
+              font-size: 14px;
+              &::placeholder{
+                  line-height: 21px;
+                  font-family: 'Poppins';
+                  font-weight: 400;
+                  font-size: 14px;
+              }
+          }
+          select{
+              width: 70%;
+              height: 46px;
+              line-height: 21px;
+              font-family: 'Poppins';
+              font-weight: 400;
+              font-size: 14px;
+          }
+          .full_info{
+              width: 70%;
+              .top_header{
+                  .item{
+                      cursor: pointer;
+                      width: 22%;
+                      .flag_img{
+                          width: 35px;
+                          border-radius: 30px;
+                      }
+                  }
+                  .active.item{
+                      font-weight: 800;
+                  }
+              }
+              .body{
+                  input{
+                      width: 100%;
+                  }
+                  textarea{
+                      width: 100%;
+                      border: 1px solid;
+                      padding: 11px;
+                      border-radius: 16px;
+                  }
+                  // background: #000;
+              }
+          }
+      }
+      .add_book_btn{
+          background: #152540;
+          border-radius: 99px;
+          width: 328px;
+          height: 46px;
+          font-size: 18px;
+          font-family: "Poppins";
+          font-weight: 500;
+          line-height: 36px;
+          color: #fff;
+      }
+    }
+  }
+  
+
+
+  @media only screen and (max-width: 1400px){
+    .author-page{
+        flex-direction: row;
+    }
+  }
+  @media only screen and (max-width: 1200px){}
+  .author-page{
+    flex-direction: column;
+    .left{
+        width: 100%;
+        .custom-upload{
+            .file-name{
+                transform: translateX(-15%);
+                width: 340px;
+            }
+        }
+    }
+    .right{
+        width: 100%;
+        .add_book_btn{
+            width: 480px;
+        }
+    }
+}
+  @media only screen and (max-width: 992px){
+    .author-page{
+        flex-direction: column;
+        .left{
+            width: 100%;
+            .custom-upload{
+                .file-name{
+                    transform: translateX(-20%);
+                    width: 300px;
+                }
+            }
+        }
+        .right{
+            width: 100%;
+            .add_book_btn{
+                width: 460px;
+            }
+        }
+    }
+  }
+  @media only screen and (max-width: 768px){
+    .author-page{
+        flex-direction: column;
+        .left{
+            width: 100%;
+            .custom-upload{
+                .file-name{
+                    transform: translateX(-20%);
+                    width: 260px;
+                }
+            }
+        }
+        .right{
+            width: 100%;
+            .add_book_btn{
+                width: 320px;
+            }
+        }
+    }
+  }
+  @media only screen and (max-width: 567px){
+    .author-page{
+        flex-direction: column;
+        .left{
+            width: 100%;
+            .custom-upload{
+                .file-name{
+                    transform: translateX(-20%);
+                    width: 230px;
+                }
+            }
+        }
+        .right{
+            width: 100%;
+            .add_book_btn{
+                width: 220px;
+            }
+        }
+    }
+  }
